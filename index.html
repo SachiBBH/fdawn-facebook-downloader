@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FDawn — Facebook Video Downloader</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="page">
+<section class="card">
+  <div class="brand"><div class="logo">F</div><div><h1>FDawn</h1><p>Facebook Video Downloader</p></div></div>
+
+  <div class="hero">
+    <h2>Download Facebook Videos</h2>
+    <p>Paste a public Facebook video link and choose your quality.</p>
+  </div>
+
+  <form id="form">
+    <label for="url">Facebook video URL</label>
+    <div class="input-wrap">
+      <input id="url" type="url" placeholder="https://www.facebook.com/..." required>
+      <button type="button" id="paste">Paste</button>
+    </div>
+
+    <div class="buttons">
+      <button class="download-btn" data-quality="hd" type="submit">
+        <b>HD Video Download</b><small>Best available quality</small>
+      </button>
+      <button class="download-btn" data-quality="default" type="submit">
+        <b>Default Video Download</b><small>Up to 720p when available</small>
+      </button>
+    </div>
+  </form>
+
+  <div id="status"></div>
+  <div class="footer">FDawn • Public/accessible videos only</div>
+</section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
